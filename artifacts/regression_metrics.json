@@ -1,0 +1,84 @@
+{
+  "verification_code": "AI-A2-7389",
+  "seed": 7389,
+  "baseline": {
+    "name": "mean_baseline",
+    "test": {
+      "mae": 2.254136462311558,
+      "rmse": 2.8946005102225736,
+      "r2": -0.0002893771724217231
+    }
+  },
+  "candidates": [
+    {
+      "name": "ridge_regression",
+      "cv_rmse_train": 0.9910960369042419,
+      "test": {
+        "mae": 0.7889833473182309,
+        "rmse": 0.9916238462296806,
+        "r2": 0.8826069700457544
+      }
+    },
+    {
+      "name": "random_forest",
+      "cv_rmse_train": 1.5244724885772603,
+      "test": {
+        "mae": 1.3082114190197212,
+        "rmse": 1.5757275118568115,
+        "r2": 0.7035778700292379
+      }
+    },
+    {
+      "name": "gradient_boosting",
+      "cv_rmse_train": 1.3873423158236498,
+      "test": {
+        "mae": 1.2023024230716144,
+        "rmse": 1.4380506624031621,
+        "r2": 0.7531138307938661
+      }
+    }
+  ],
+  "selected_model": "ridge_regression",
+  "selection_reason": "ridge_regression had the lowest 5-fold cross-validated RMSE on the training split (0.991 tons) among the candidates, and it beats the mean baseline on the held-out test set (RMSE 0.992 vs 2.895). Selection used training-only evidence; the test set was kept for the final report.",
+  "largest_test_errors": [
+    {
+      "farm_id": "F205",
+      "rainfall_mm": 738.6299,
+      "avg_temp_c": 22.5221,
+      "soil_moisture_pct": 59.7286,
+      "fertilizer_kg": null,
+      "field_size_ha": 1.6721,
+      "season": "A",
+      "cooperative_support": 1,
+      "yield_tons": 13.768,
+      "predicted": 11.3305,
+      "error": 2.4375
+    },
+    {
+      "farm_id": "F172",
+      "rainfall_mm": 1176.2561,
+      "avg_temp_c": 17.8873,
+      "soil_moisture_pct": 44.2446,
+      "fertilizer_kg": 129.3213,
+      "field_size_ha": 3.5102,
+      "season": "B",
+      "cooperative_support": 1,
+      "yield_tons": 16.9865,
+      "predicted": 14.8975,
+      "error": 2.089
+    },
+    {
+      "farm_id": "F154",
+      "rainfall_mm": 1250.451,
+      "avg_temp_c": 19.199,
+      "soil_moisture_pct": 77.0783,
+      "fertilizer_kg": 34.035,
+      "field_size_ha": 0.9183,
+      "season": "B",
+      "cooperative_support": 0,
+      "yield_tons": 9.1935,
+      "predicted": 11.1326,
+      "error": -1.9391
+    }
+  ]
+}

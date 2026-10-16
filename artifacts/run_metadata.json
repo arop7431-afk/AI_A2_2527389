@@ -1,0 +1,18 @@
+{
+  "verification_code": "AI-A2-7389",
+  "seed": 7389,
+  "student_id": "ug2527389@ines.ac.rw",
+  "registration_digits": "2527389",
+  "dataset_file": "AI_A2_2527389.csv",
+  "dataset_sha256": "8acc1963f35734be0573f8f05034bf944c451a4a02297a837060250cc81d61e5",
+  "rows_total": 252,
+  "rows_after_cleaning": 249,
+  "train_rows": 199,
+  "test_rows": 50,
+  "random_state_everywhere": 7389,
+  "synthetic_data": true,
+  "python": "3.13.14",
+  "scikit_learn": "1.9.1",
+  "numpy": "2.5.3",
+  "pandas": "3.0.6"
+}

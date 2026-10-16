@@ -1,0 +1,133 @@
+{
+  "verification_code": "AI-A2-7389",
+  "seed": 7389,
+  "baseline": {
+    "name": "majority_baseline",
+    "test": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": 0.5,
+      "confusion_matrix": [
+        [
+          25,
+          0
+        ],
+        [
+          25,
+          0
+        ]
+      ]
+    }
+  },
+  "candidates": [
+    {
+      "name": "logistic_regression",
+      "cv_f1_train": 0.9688994810946031,
+      "test": {
+        "precision": 0.8928571428571429,
+        "recall": 1.0,
+        "f1": 0.9433962264150944,
+        "roc_auc": 0.9856,
+        "confusion_matrix": [
+          [
+            22,
+            3
+          ],
+          [
+            0,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "name": "random_forest",
+      "cv_f1_train": 0.9413405308142149,
+      "test": {
+        "precision": 0.8888888888888888,
+        "recall": 0.96,
+        "f1": 0.9230769230769231,
+        "roc_auc": 0.9808,
+        "confusion_matrix": [
+          [
+            22,
+            3
+          ],
+          [
+            1,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "name": "gradient_boosting",
+      "cv_f1_train": 0.9172736872351763,
+      "test": {
+        "precision": 0.8888888888888888,
+        "recall": 0.96,
+        "f1": 0.9230769230769231,
+        "roc_auc": 0.9648,
+        "confusion_matrix": [
+          [
+            22,
+            3
+          ],
+          [
+            1,
+            24
+          ]
+        ]
+      }
+    }
+  ],
+  "selected_model": "logistic_regression",
+  "selection_reason": "logistic_regression had the highest 5-fold cross-validated F1 on the training split (0.969). On the held-out test set it reached F1 0.943 and ROC-AUC 0.986, versus F1 0.000 for the majority baseline.",
+  "positive_class": "high_risk = 1",
+  "confusion_matrix_layout": "[[TN, FP], [FN, TP]]",
+  "most_confident_mistakes": [
+    {
+      "farm_id": "F188",
+      "rainfall_mm": 1351.1148,
+      "avg_temp_c": 17.9303,
+      "soil_moisture_pct": 63.7522,
+      "fertilizer_kg": 140.6299,
+      "field_size_ha": 3.4265,
+      "season": "A",
+      "cooperative_support": 1,
+      "yield_tons": 18.9589,
+      "high_risk": 0,
+      "predicted": 1,
+      "probability_high_risk": 0.8087
+    },
+    {
+      "farm_id": "F200",
+      "rainfall_mm": 942.5954,
+      "avg_temp_c": 25.3906,
+      "soil_moisture_pct": 76.4469,
+      "fertilizer_kg": 214.5533,
+      "field_size_ha": 2.8407,
+      "season": "B",
+      "cooperative_support": 1,
+      "yield_tons": 15.9179,
+      "high_risk": 0,
+      "predicted": 1,
+      "probability_high_risk": 0.7618
+    },
+    {
+      "farm_id": "F185",
+      "rainfall_mm": 769.4727,
+      "avg_temp_c": 15.2302,
+      "soil_moisture_pct": 39.2241,
+      "fertilizer_kg": 130.79,
+      "field_size_ha": 2.0217,
+      "season": "A",
+      "cooperative_support": 0,
+      "yield_tons": 11.1015,
+      "high_risk": 0,
+      "predicted": 1,
+      "probability_high_risk": 0.7077
+    }
+  ]
+}
