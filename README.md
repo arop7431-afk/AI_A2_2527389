@@ -7,7 +7,7 @@
 | Institutional username | ug2527389@ines.ac.rw |
 | Verification code | AI-A2-7389 |
 | Repository URL | [[https://github.com/arop7431-afk/AI_A2_2527389.git]] |
-| Final commit hash | [[fc078c690e7d03828cec404977209fc7b6b9f386]] |
+| Final commit hash | [[50ad0e74c95c68c79eacf57644f27e4cff1b9e4f]] |
 | Python version tested | [[ 3.13.14]] |
 | Operating system tested | [[ Windows 11 ]] |
 
